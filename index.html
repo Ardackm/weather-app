@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+
+</head>
+<body onload="start()">
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                Weather App
+            </div>
+            <div class="searchBox">
+                <input type="text" name="search" id="search" autocomplete="off" placeholder="Enter City Name..">
+                <img src="images/search-circle.svg" alt="" onclick="searchCity()">
+            </div>
+        </header>
+        <div id="main-content">
+        <div class="content">
+            <div class="main-info">
+            <div id="city">
+            </div>
+            
+            <div id="temp">
+                <div id="cel">
+            </div>
+                <br>
+                <div id="far">
+            </div>
+            </div>
+            
+            <div id="main"></div>
+            <div id="description"></div>
+            
+        <div id="img">
+            <img id="icon" alt="">
+        </div>
+            <div id="timezone">
+            </div>
+        </div>
+        <div id="details">
+            <div class="details">
+                <div id="country" class="-detail">
+                </div>
+                <div id="humidity" class="-detail">
+                </div>
+                <div id="pressure" class="-detail">
+                </div>
+                <div id="temp-max" class="-detail">
+                </div>
+                <div id="temp-min" class="-detail">
+                </div>
+                <div id="wind" class="-detail">
+                    <div id="wind-speed">
+                    </div>
+                    <div id="wind-deg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="error">
+        <h1>This city doesn't exists in our database!</h1>
+        <h3>Try another city.</h3>
+    </div>
+   
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
